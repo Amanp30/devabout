@@ -1,0 +1,71 @@
+/* navbar */
+
+.hambg {
+    display: none;
+}
+
+.logomain {
+    width: 100px;
+    aspect-ratio: 3/.5;
+    object-fit: contain;
+}
+
+.themenu {
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+    background: white;
+    align-items: center;
+    padding: 0 4em;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.links {
+    display: flex;
+    grid-gap: 8em;
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .hambg {
+        display: block;
+        text-align: right;
+        font-size: 2.2em;
+    }
+
+    .themenu {
+        display: grid;
+        grid-template-columns: 46% 46%;
+        grid-gap: 4%;
+        padding: 0 1em;
+    }
+
+    .links {
+        flex-direction: column;
+        grid-gap: 0;
+        background: white;
+        z-index: 100;
+        display: none;
+    }
+
+    .links.mlinks {
+        position: fixed;
+        top: 3em;
+        display: flex;
+        right: 0;
+        left: 0;
+        /*  bottom: 0; */
+        grid-gap: 1em;
+        padding: 2em 1em;
+        text-align: center;
+        z-index: 100;
+    }
+}

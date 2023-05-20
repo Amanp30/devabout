@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: beige;
+}
+
+.built {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+img.plusimg {
+    padding: 2em;
+    background: white;
+    border-radius: 1em;
+    margin-top: 2em;
+    box-shadow: 0 0 4em 15px #1b82e140;
+
+}
+
+.formthis {
+    padding: 2em;
+    background: white;
+    display: flex;
+    text-align: center;
+    min-height: 215px;
+    margin-top: 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 4em 15px #1b82e140;
+}
+
+.jiffg {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin: 1em;
+    width: 400px;
+}
+
+.jiffg label {
+    text-align: left;
+}
+
+.jiffg input {
+    padding: .5em;
+    font-size: 1.2em;
+    border: 1px solid;
+}
+
+.blues {
+    padding: 1em 2.6em;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: .5em;
+    display: flex;
+    align-items: center;
+}
+
+.later {
+    padding: 1em 2.6em;
+    border: none;
+    background-color: aqua;
+    color: green;
+    font-weight: bold;
+    border-radius: .5em;
+}
+
+.btngrp {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+@media (max-width:600px) {
+    .built {
+        height: 60vh;
+    }
+
+    .jiffg {
+        width: auto;
+    }
+}
+
+/* shfdfgh */
+
+.magio {
+    width: 60%;
+    background: white;
+    margin: auto;
+    padding: 2em;
+}
+
+.projectgroup {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.topgbar {
+    text-align: center;
+    background: aliceblue;
+    padding: 3em 0;
+}
+
+.thecheks section {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
+}
+
+.thecheks {
+    background: aliceblue;
+    padding-top: 2em;
+}
+
+.wowcheck {
+    padding: .5em;
+    margin-bottom: .5em;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.wowcheck input[type="checkbox"] {
+    font-size: 1em;
+    height: 1em;
+    width: 1em;
+    margin-right: .4em;
+}
+
+input[type="checkbox"]:checked+span {
+    /*  color: blue; */
+    transition: .2s ease-in;
+    font-weight: bolder;
+}
+
+
+
+.savebtn {
+    margin: 3em 0 4em 0;
+    padding: 1em 1.8em;
+    border-radius: 5%;
+    background: blue;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    font-size: 1em;
+
+}
+
+#updateForm {
+    background-color: white;
+}
+
+.projectgroup label {
+    font-weight: bolder;
+    font-size: 1.6em;
+}
+
+
+.projectgroup input,
+.projectgroup textarea {
+    padding: .5em;
+    border: none;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+.mifgo {
+    font-size: .8em;
+    margin: .4em 0;
+    font-weight: bolder;
+    color: rgb(56, 56, 53);
+}
+
+.projectgroup input:focus,
+.projectgroup textarea:focus {
+    outline: none;
+    border-bottom: 1px solid;
+    transition-delay: .3s ease-in;
+}
+
+.projectgroup textarea {
+    height: 100px;
+    max-height: 300px;
+    min-height: 80px;
+    resize: vertical;
+}
+
+
+save {
+    text-align: center;
+    width: auto;
+    margin: auto;
+}
+
+.savediv {
+    text-align: center;
+}
+
+.rowimg {
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+}
+
+@media (max-width:700px) {
+
+    .magio {
+        width: auto;
+    }
+
+    .thecheks section {
+        width: 90%;
+    }
+
+
+}
+
+/* sgdfghdfgh */
+
+
+.imageinput {
+    width: 200px;
+    height: 200px;
+    background: beige;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .8em;
+    margin-top: .8em;
+    border-radius: 1em;
+}
+
+.imageinput img {
+    border-radius: 1em;
+}
+
+.chooseimg {
+    width: 200px;
+    height: 2.5em;
+    background: black;
+    position: relative;
+    border-radius: .5em;
+}
+
+.chooseimg:before {
+    content: "Select Image";
+    position: absolute;
+    color: white;
+    left: 3.6em;
+    top: .5em;
+    display: flex;
+}
+
+input[type="file"] {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1em;
+    right: 0;
+    bottom: 0;
+}
+
+
+.jichalo {
+    position: fixed;
+    width: 300px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: green;
+    z-index: 10000000000;
+    padding: 1em;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .jichalo {
+        width: 250px;
+        top: 12%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+.innerproject {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+}
+
+@media (max-width:767px) {
+    .innerproject {
+        display: block;
+        width: 90%;
+        gap: 0;
+    }
+
+    .project {
+        width: 90% !important;
+        margin-bottom: 2em;
+    }
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    margin-top: .4em;
+    max-width: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+
+
+.project {
+    padding: 1em;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    width: 28%;
+}
+
+.editthis {
+    text-decoration: none;
+    background: rgb(98, 178, 249);
+    width: 100%;
+    border-radius: 4px;
+    color: black;
+    text-align: center;
+    display: block;
+    padding: .4em 0;
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-top: .4em;
+}
+
+
+/* link frontend */
+
+.databoard {
+    width: 50%;
+    margin: auto;
+    padding: 4em .5em;
+    height: 100vh;
+}
+
+.holasdg {
+    display: flex;
+    align-items: center;
+}
+
+.thebioji {
+    font-size: 1.3em;
+    margin-top: 1.6em;
+    margin-bottom: .5em;
+}
+
+.showproject heading {
+    margin: 2em 0;
+}
+
+.jiproject a {
+    text-decoration: none;
+    color: black;
+}
+
+.jiproject {
+    margin-bottom: 2em;
+}
+
+
+.outsidelinkimg {
+    width: 25px;
+    height: 25px;
+    margin-right: 1.2em;
+}
+
+@media (max-width:767px) {
+    .databoard {
+        width: 90%;
+    }
+}
+
+
+.swiper {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+
+.yoboxes a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin-bottom: 0.6em;
+}
+
+.yoboxes {
+    padding: 1em;
+    background: white;
+}
+
+.thirtyseventy {
+    display: grid;
+    grid-template-columns: 30% 66%;
+    grid-gap: 4%;
+}

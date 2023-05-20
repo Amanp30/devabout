@@ -1,0 +1,38 @@
+.notifysuccess {
+    position: fixed;
+    bottom: 6%;
+    left: 4%;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+    background: green;
+    padding: 1em 2em;
+    color: white;
+    border-radius: .6em;
+}
+
+@media (max-width:600px) {
+
+    .notifysuccess {
+        bottom: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        /* Prevent text from wrapping */
+        max-width: 300px;
+        overflow: hidden;
+        /* Truncate text that is too long */
+        text-overflow: ellipsis;
+        /* Add an ellipsis */
+        box-shadow: 0 0 4em beige;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

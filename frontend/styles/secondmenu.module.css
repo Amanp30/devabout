@@ -1,0 +1,34 @@
+.secpatti {
+    background: white;
+    padding: 1em 0;
+    box-shadow: 0 0 1em #3f51b5;
+
+}
+
+.divide {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.compsvbtn {
+    padding: .6em 1em;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: .6em;
+}
+
+@media (max-width:600px) {
+    .divide {
+        width: auto;
+        padding: 0 1em;
+    }
+
+    .divide h1 {
+        font-size: 1.2em;
+    }
+}

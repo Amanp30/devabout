@@ -1,0 +1,216 @@
+.twoparts {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    grid-gap: 4%;
+}
+
+.pt1 {
+    width: 50%;
+}
+
+.pt2 {
+    width: 50%;
+}
+
+
+.topp {
+    margin: 2em 0 1em 0;
+    font-weight: bolder;
+    font-size: 1.6em;
+}
+
+.ffgrm {
+    display: flex;
+    width: 100%;
+    grid-gap: 1%;
+    margin-bottom: 1em;
+    margin-top: .4em;
+}
+
+.pmrgn {
+    margin-bottom: 2.4em;
+}
+
+.lurl {
+    padding: 1em;
+    width: 90%;
+    padding: .6em;
+    font-size: 1em;
+}
+
+.pspd {
+    padding: 2em 3em;
+    background: white;
+    border-radius: .4em;
+}
+
+.ffg {
+    display: flex;
+    flex-direction: column;
+    grid-gap: .4em;
+    margin-bottom: 1em;
+}
+
+.lowtext {
+    color: #424242;
+}
+
+
+.ffg input,
+.ffg select,
+.ffg textarea {
+    padding: .6em;
+    font-size: 1em;
+}
+
+.rmbtn {
+    width: auto;
+    background: none;
+    border: none;
+    font-size: 2em;
+}
+
+.addnewbtn {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid;
+    background: black;
+    color: white;
+}
+
+
+
+
+/* settings */
+
+.klgvg {
+    display: flex;
+    grid-gap: 5%;
+}
+
+.profilepic {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    /*  height: 100px; */
+}
+
+.lft {
+    width: 20%;
+}
+
+.rght {
+    width: 80%;
+}
+
+.hellok {
+    position: relative;
+    width: 100%;
+    height: 2.5em;
+
+    background: beige;
+    border: 1px solid;
+}
+
+.hellok::before {
+    content: "+ Upload Image";
+    position: absolute;
+    color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#profilepic {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 3em;
+    bottom: 0;
+    opacity: 0;
+}
+
+
+
+.profile {
+    width: 100px;
+}
+
+.biotext {
+    resize: vertical;
+    height: 12em;
+}
+
+.hellok.delpic {
+    background: red;
+    margin-top: 1em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hellok.delpic::before {
+    content: "";
+}
+
+.headnotify {
+    padding: 1em;
+    background: green;
+    color: white;
+    text-align: center;
+}
+
+.headnotify a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bolder;
+}
+
+.marginji {
+    margin-bottom: 6em;
+}
+
+.gotcha {
+    margin-left: 4em;
+}
+
+@media (max-width: 600px) {
+    .twoparts {
+        width: auto;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .pspd {
+        padding: 1em 2em;
+    }
+
+    .pt1,
+    .pt2,
+    .lft,
+    .rght,
+    .profile {
+        width: auto;
+    }
+
+    .profile {
+        text-align: center;
+    }
+
+    .profilepic {
+        height: 16em;
+        width: 16em;
+    }
+
+    .rght {
+        margin-top: 1.6em;
+    }
+
+    .klgvg {
+        flex-direction: column;
+    }
+
+}

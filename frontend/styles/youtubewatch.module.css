@@ -1,0 +1,13 @@
+@media (max-width:600px) {
+    .wrapformobile {
+        width: 100%;
+        height: max-content;
+    }
+
+    .wrapformobile iframe {
+        width: 100%;
+        height: fit-content;
+        min-height: 280px;
+        max-height: 290px;
+    }
+}
