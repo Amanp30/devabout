@@ -9,8 +9,8 @@ import css from "../../styles/auth.module.css";
 
 var form = (e) => {
   const [values, setvalues] = useState({
-    email: "amanpareek300@gmail.com",
-    password: "111111",
+    email: "",
+    password: "",
   });
 
   const [loadbtn, setloadbtn] = useState(false);

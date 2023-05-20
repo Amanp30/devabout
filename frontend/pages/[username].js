@@ -31,18 +31,18 @@ function index(props) {
                       objectFit: "cover",
                       borderRadius: "20px",
                     }}
-                    src={`${API}/profile/${data.user.profilephoto}`}
+                    src={`${API}/profile/${data?.user?.profilephoto}`}
                   />{" "}
                   <div style={{ marginLeft: "1em" }}>
                     {" "}
                     <h1>
                       {" "}
-                      {data.user.first} {data.user.last}
+                      {data?.user?.first} {data?.user?.last}
                     </h1>
-                    <p>@{data.user.username}</p>
+                    <p>@{data?.user?.username}</p>
                   </div>
                 </div>
-                <div className="thebioji"> {data.user.bio}</div>
+                <div className="thebioji"> {data?.user?.bio}</div>
 
                 {/*  {data.user.links.map((link, index) => {
                   return (
@@ -57,7 +57,7 @@ function index(props) {
                   );
                 })} */}
 
-                {data.user.links.map((link, index) => {
+                {data?.user?.links?.map((link, index) => {
                   let socialmedia = socialprofiles.find(
                     (sm) => link.startsWith(sm.website)
                     /* sm.website.startsWith(link) */
@@ -147,7 +147,7 @@ function index(props) {
 
 export async function getServerSideProps({ params }) {
   //var res = await fetch(`http://localhost:8000/api/${params.slug}`);
-  console.log(params.username);
+  console.log(params?.username);
   var res = await fetch(`${API}/api/getusername/${params.username}`);
   var myuser = await res.json();
 

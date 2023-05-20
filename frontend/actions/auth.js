@@ -75,13 +75,17 @@ export const isAuth = () => {
   if (process.browser) {
     const cookieChecked = getCookie("token");
     if (cookieChecked) {
-      if (localStorage.getItem("user")) {
-        return JSON.parse(localStorage.getItem("user"));
-      } else {
-        return false;
+      const userJson = localStorage.getItem("user");
+      try {
+        const user = userJson ? JSON.parse(userJson) : null;
+        return user;
+      } catch (error) {
+        console.error("Error parsing user JSON:", error);
+        return null; // Or return a default user object or handle the error in a different way
       }
     }
   }
+  return false; // Return false if cookieChecked is false or process.browser is false
 };
 
 export const userid = () => {
